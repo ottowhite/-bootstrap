@@ -30,6 +30,7 @@ confirm_and_run_commands \
 		make \
 		curl \
 		git \
+		fzf \
 		tree"
 
 confirm_and_run_commands \
@@ -43,6 +44,12 @@ confirm_and_run_commands \
 	"git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" \
 	"echo [INSTRUCTION] Construct .zshrc" \
 	"echo [INSTRUCTION] Source .zshrc"
+
+confirm_and_run_commands \
+	"Pull configuration files?" \
+	"git clone http://github.com/ottowhite/simple-config-manager.git" \
+	"cd simple-config-manager" \
+	"./synchronize.sh configuration_directory"
 
 confirm_and_run_commands \
   "Install Docker?" \
@@ -67,4 +74,3 @@ confirm_and_run_commands \
 	"echo [INSTRUCTION] Start the docker daemon"
 
 # TODO: Add SSH key creation
-# TODO: Add pulling in ZSH config files
