@@ -49,7 +49,7 @@ confirm_and_run_commands \
 	"Pull configuration files?" \
 	"git clone http://github.com/ottowhite/simple-config-manager.git" \
 	"cd simple-config-manager" \
-	"./synchronize.sh configuration_directory"
+	"./synchronize.sh"
 
 confirm_and_run_commands \
   "Install Docker?" \
