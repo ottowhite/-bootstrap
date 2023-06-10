@@ -31,7 +31,8 @@ confirm_and_run_commands \
 		curl \
 		git \
 		fzf \
-		tree"
+		tree \
+		python3"
 
 confirm_and_run_commands \
 	"Install ZSH and Oh My Zsh?" \
