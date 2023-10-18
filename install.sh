@@ -26,7 +26,6 @@ confirm_and_run_commands \
 	"Install basic packages?" \
 	"sudo apt update -y && sudo apt install -y \
 		neovim \
-		maven \
 		make \
 		curl \
 		git \
